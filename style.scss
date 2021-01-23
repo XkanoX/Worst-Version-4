@@ -1,0 +1,1189 @@
+/*шрифты*/
+@font-face {
+    font-family: 'PostNoBillsJaffna';
+    src: url('../fonts/PostNoBillsJaffna-Bold.eot');
+    src: local('☺'), url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff'), url('../fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'), url('../fonts/PostNoBillsJaffna-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #000000;
+    font-family: "PT Sans";
+}
+.sticky {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    .info {
+        display: flex;
+        color: gray;
+        font-weight: regular;
+        font-size: 12px;
+        p {
+            margin-left: 15px;
+        }
+    }
+    .register {
+        display: flex;
+        color: gray;
+        font-size: 12px;
+        p {
+            margin-left: 15px;
+        }
+    }
+}
+.header-two {
+    .bg {
+        background-color: #0F0F0F;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .logo {
+            font-size: 36px;
+            color: white;
+            font-family: "PostNoBillsJaffna";
+            margin: auto 0;
+        }
+        .nav {
+            display: flex;
+            font-family: "PT Sans";
+            color: gray;
+            font-size: 14px;
+            text-transform: uppercase;
+            p {
+                padding: 30px 20px 30px 20px;
+            }
+            .white {
+                color: white;
+                background-color: #1f1f1f;
+            }
+            img {
+                height: 22px;
+                width: 22px;
+                margin: 25px;
+            }
+            .mar {
+                margin-left: 40px;
+                margin-right: 20px;
+            }
+            .no-mar {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+section.back-img {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 810px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .slog {
+        padding: 120px 60px 120px 60px;
+        border: 4px solid #FFFFFF;
+        .main-slog {
+            font-family: "PostNoBillsJaffna";
+            font-size: 64px;
+        }
+        .city {
+            font-family: "PT Sans";
+            font-size: 22px;
+            border-top: 2px solid #FFFFFF;
+            margin-top: -10px;
+        }
+    }
+    .slog-info {
+        font-size: 18px;
+        line-height: 24px;
+        width: 680px;
+        margin: 0 auto;
+        margin-top: -230px;
+        text-align: center;
+    }
+    div {
+        color: #FFFFFF;
+    }
+}
+.collection {
+    display: flex;
+    justify-content: space-between;
+    .new-collection {
+        background-image: url(../img/r_block.png);
+        width: 45%;
+        height: 730px;
+        justify-self: end;
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            margin-top: 56%;
+            margin-bottom: 20px;
+            font-family: "Playfair Display";
+            text-transform: uppercase;
+            font-size: 36px;
+            line-height: 48px;
+        }
+        p {
+            display: inline;
+            font-family: "PT Sans";
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            padding: 15px 30px 15px 30px;
+            margin: 30px;
+        }
+        hr {
+            padding: 0 60px 0 60px;
+            color: #FFFFFF;
+        }
+    }
+    .new-season {
+        background-color: #000000;
+        width: 55%;
+        height: auto;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: "Playfair Display";
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+            padding: 90px 0 0 0;
+        }
+        hr {
+            margin: 50px 45% 50px 45%;
+            color: #FFFFFF;
+        }
+        .items {
+            display: flex;
+            flex-direction: row;
+            .item {
+                display: flex;
+                flex-direction: column;
+                margin-left: 50px;
+                .clock{
+                    height: 325px;
+                    width: 260px;
+                    background-color: #1F1F1F;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    text-align: left;
+                    font-size: 16px;
+                    p {
+                        margin-top: 28px;
+                        font-weight: 400;
+                        line-height: 24px
+                    }
+                    .min-mar {
+                        margin-top: 12px;
+                        font-weight: bold;
+                        line-height: 21px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+}
+
+.block {
+    display: flex;
+    height: 100%;
+    width: auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    h2{
+        font-family: "Playfair Display";
+        font-size: 3rem;
+        line-height: 48px;
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+    hr {
+        margin: 40px 45% 40px 45%;
+    }
+    p {
+        font-family: "PT Sans";
+        font-size: 1.1rem;
+        line-height: 21px;
+        padding: 0 30% 0 30%;
+    }
+    h3 {
+        display: inline-block;
+        font-family: "PT Sans";
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        margin-top: 60px;
+        border: 2px solid #FFFFFF;
+        padding: 30px 28px 30px 28px;
+    }
+}
+
+.black {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Playfair Display";
+    h3 {
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        margin: 130px 0 45px 0;
+    }
+    hr {
+        margin: 0 45% 75px 45%;
+    }
+    .items {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        .clock {
+            background-color: #1F1F1F;
+            width: 260px;
+            height: 325px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 27px;
+            img {
+                margin: auto;
+            }
+        }
+    }
+    .items-2 {
+        display: flex;
+        text-align: start;
+        margin-bottom: 150px;
+        .clock {
+            background-color: #1F1F1F;
+            width: 260px;
+            height: 325px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 27px;
+            img {
+                margin: auto;
+            }
+        }
+    }
+}
+
+.some-bg {
+    background-color: #0F0F0F;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            margin: 65px 0 40px 0;
+        }
+        hr {
+            margin: 0 490px 30px 490px;
+            color: #FFFFFF;
+        }
+        .brends {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+.photo-bg {
+    background-image: url(../img/footer-bg.png);
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 85px;
+    }
+    h4 {
+        font-family: "Playfair Display";
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    p, a {
+        font-family: "PT Sans";
+        font-size: 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        line-height: 21px;
+    }
+    a {
+        padding: 13px;
+        background-color: #000000;
+        display: inline-flex;
+        margin: 0 15px 15px 0;
+    }
+    .magazin, .category, .call {
+        width: 29%;
+        margin-bottom: 90px;
+    }
+}
+
+.footer {
+    background-color: #000000;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        font-family: "PT Sans";
+        font-size: 12px;
+        line-height: 16px;
+        color: #D0D0D0;
+        padding: 15px 0 15px 0;
+        .fig {
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+@media (max-width: 1810px){
+    .wrapper {
+        max-width: 1050px;
+    }
+
+    .collection {
+        background: #000000;
+    .new-collection {
+        width: 50%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 25px;
+            line-height: 33px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 12px 25px 12px 25px;
+            margin: 25px;
+        }
+        hr {
+            padding: 0 40px 0 40px
+        }
+    }
+    .new-season {
+        width: 65%;
+        height: auto;
+        h2 {
+            font-size: 26px;
+            padding: 35px 0 0 0;
+        }
+        .items {
+            .item {
+                margin-left: 5%;
+                justify-content: stretch;
+                .clock{
+                    height: 260px;
+                    width: 205px;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    font-size: 12px;
+                    p {
+                        margin-top: 14px;
+                        line-height: 12px
+                    }
+                    .min-mar {
+                        margin-top: 8px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+    }
+
+    .block {
+        .photo {
+            width: 70%;
+            img {
+                width: 650px;
+            }
+        }
+        h2 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 50px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 18px;
+        }
+        h3 {
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 15px 14px 15px 14px;
+        }
+    }
+
+    .black {
+        h3{
+        font-size: 22px;
+        margin: 55px 0 22px 0;
+        }
+        .wrapper {
+            .items, .items-2 {
+                justify-content: space-between;
+                .clock {
+                    height: 200px;
+                    width: 165px;
+                    img {
+                        height: 170px;
+                        width: 115px;
+                    }
+                }
+            }
+            .items-2 {
+                margin-bottom: 75px;
+            }
+        }
+    }
+
+    .some-bg {
+        .wrapper {
+            font-size: 22px;
+            h3 {
+                margin: 32px 0 20px 0;
+            }
+            .brends {
+                padding: 6px;
+                margin-bottom: 37px;
+            }
+        }
+    }
+
+    .photo-bg {
+        .wrapper {
+            margin-top: 35px;
+            h4 {
+                margin-bottom: 25px;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .magazin, .category, .call {
+                margin-bottom: 35px;
+            }
+            p, a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .footer {
+        .wrapper {
+            font-size: 9px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .collection {
+        background: #000000;
+    .new-collection {
+        width: 45%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            padding: 12px 25px 12px 25px;
+            margin: 25px;
+        }
+        hr {
+            padding: 0 40px 0 40px
+        }
+    }
+    .new-season {
+        width: 65%;
+        height: auto;
+        h2 {
+            font-size: 22px;
+            padding: 25px 0 0 0;
+        }
+        .items {
+            .item {
+                margin-left: 50px;
+                .clock{
+                    height: 220px;
+                    width: 165px;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    font-size: 12px;
+                    p {
+                        margin-top: 14px;
+                        line-height: 12px
+                    }
+                    .min-mar {
+                        margin-top: 8px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+    }
+
+    .block {
+        .photo {
+            width: 80%;
+            img {
+                width: 600px;
+            }
+        }
+        h2 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 50px;
+        }
+        p {
+            font-size: 10px;
+            line-height: 18px;
+        }
+        h3 {
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 15px 14px 15px 14px;
+        }
+    }
+
+    .black {
+        h3{
+        font-size: 22px;
+        margin: 55px 0 22px 0;
+        }
+        .wrapper {
+            .items, .items-2 {
+                justify-content: space-between;
+                .clock {
+                    height: 200px;
+                    width: 165px;
+                    img {
+                        height: 170px;
+                        width: 115px;
+                    }
+                }
+            }
+            .items-2 {
+                margin-bottom: 75px;
+            }
+        }
+    }
+
+    .some-bg {
+        .wrapper {
+            font-size: 22px;
+            h3 {
+                margin: 32px 0 20px 0;
+            }
+            .brends {
+                padding: 6px;
+                margin-bottom: 37px;
+            }
+        }
+    }
+
+    .photo-bg {
+        .wrapper {
+            margin-top: 35px;
+            h4 {
+                margin-bottom: 25px;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .magazin, .category, .call {
+                margin-bottom: 35px;
+            }
+            p, a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .footer {
+        .wrapper {
+            font-size: 9px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .collection {
+        background: #000000;
+    .new-collection {
+        width: 50%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        h2 {
+            margin-bottom: 12px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 10px 22px 10px 22px;
+            margin: 22px;
+        }
+        hr {
+            padding: 0 40px 0 40px
+        }
+    }
+    .new-season {
+        width: 65%;
+        height: auto;
+        h2 {
+            font-size: 22px;
+            padding: 25px 0 0 0;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .items {
+            .item {
+                margin-left: 5%;
+                justify-content: stretch;
+                .clock{
+                    height: 220px;
+                    width: 165px;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    font-size: 10px;
+                    p {
+                        margin-top: 12px;
+                        line-height: 10px
+                    }
+                    .min-mar {
+                        margin-top: 5px;
+                        line-height: 14px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+    }
+
+    .block {
+        .photo {
+            width: 70%;
+            img {
+                width: 600px;
+            }
+        }
+        h2 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 30px;
+        }
+        hr {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 10px;
+            line-height: 18px;
+        }
+        h3 {
+            font-size: 12px;
+            margin-top: 20px;
+            padding: 12px 11px 12px 11px;
+        }
+    }
+
+    .black {
+        h3{
+        font-size: 22px;
+        margin: 55px 0 22px 0;
+        }
+        .wrapper {
+            .items, .items-2 {
+                justify-content: space-between;
+                .clock {
+                    height: 200px;
+                    width: 165px;
+                    img {
+                        height: 170px;
+                        width: 115px;
+                    }
+                }
+            }
+            .items-2 {
+                margin-bottom: 75px;
+            }
+        }
+    }
+
+    .some-bg {
+        .wrapper {
+            font-size: 22px;
+            h3 {
+                margin: 32px 0 20px 0;
+            }
+            .brends {
+                padding: 6px;
+                margin-bottom: 37px;
+            }
+        }
+    }
+
+    .photo-bg {
+        .wrapper {
+            margin-top: 35px;
+            h4 {
+                margin-bottom: 25px;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .magazin, .category, .call {
+                margin-bottom: 35px;
+            }
+            p, a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .footer {
+        .wrapper {
+            font-size: 9px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+
+@media (orientation:portrait) {
+    .wrapper {
+        max-width: auto;
+        margin: 0 10px;
+    }
+
+    .collection {
+        background: #000000;
+    .new-collection {
+        width: 50%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        h2 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            line-height: 25px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 20px;
+            padding: 10px 22px 10px 22px;
+            margin: 22px;
+        }
+        hr {
+            padding: 0 40px 0 40px
+        }
+    }
+    .new-season {
+        width: 60%;
+        height: auto;
+        h2 {
+            font-size: 1rem;
+            padding: 10px 0 0 0;
+        }
+        hr {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-left: -7%;
+            .item {
+                margin-left: 5%;
+                justify-content: stretch;
+                .clock{
+                    height: 180px;
+                    width: 125px;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    font-size: 10px;
+                    p {
+                        margin-top: 12px;
+                        line-height: 10px
+                    }
+                    .min-mar {
+                        margin-top: 5px;
+                        line-height: 14px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+    }
+
+    .block {
+        .photo {
+            width: 75%;
+            img {
+                width: 550px;
+            }
+        }
+        h2 {
+        font-size: 1.2rem;
+        line-height: 25px;
+        margin-top: 20px;
+        }
+        hr {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 18px;
+            padding: 0 20% 0 20%;
+        }
+        h3 {
+            font-size: 0.9rem;
+            margin-top: 15px;
+            padding: 12px 11px 12px 11px;
+        }
+    }
+
+    .black {
+        h3{
+        font-size: 1.5rem;
+        margin: 40px 0 20px 0;
+        }
+        hr {
+            margin-bottom: 40px;
+        }
+        .wrapper {
+            .items, .items-2 {
+                justify-content: center;
+                .clock {
+                    height: 180px;
+                    width: 135px;
+                    margin-right: 20px;
+                    img {
+                        height: 150px;
+                        width: 105px;
+                    }
+                }
+            }
+            .items-2 {
+                margin-bottom: 45px;
+            }
+            .min-mar {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .some-bg {
+        .wrapper {
+            font-size: 1.4rem;
+            h3 {
+                margin: 28px 0 16px 0;
+            }
+            .brends {
+                padding: 0px;
+                margin-bottom: 35px;
+                margin-left: 0;
+                .none {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .photo-bg {
+        .wrapper {
+            margin-top: 35px;
+            h4 {
+                margin-bottom: 25px;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .magazin, .category, .call {
+                margin-bottom: 35px;
+            }
+            p, a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .footer {
+        .wrapper {
+            font-size: 9px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+@media (orientation:landscape) {
+    .wrapper {
+        max-width: auto;
+        margin: 0 10px;
+    }
+
+    .collection {
+        background: #000000;
+    .new-collection {
+        width: 50%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        h2 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            line-height: 25px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 20px;
+            padding: 10px 22px 10px 22px;
+            margin: 22px;
+        }
+        hr {
+            padding: 0 40px 0 40px
+        }
+    }
+    .new-season {
+        width: 60%;
+        height: auto;
+        h2 {
+            font-size: 1rem;
+            padding: 10px 0 0 0;
+        }
+        hr {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-left: -7%;
+            .item {
+                margin-left: 5%;
+                justify-content: stretch;
+                .clock{
+                    height: 180px;
+                    width: 125px;
+                }
+                img {
+                    height: 65%;
+                    width: auto;
+                }
+                .clock-info {
+                    font-size: 10px;
+                    p {
+                        margin-top: 12px;
+                        line-height: 10px
+                    }
+                    .min-mar {
+                        margin-top: 5px;
+                        line-height: 14px;
+                    }
+                }
+            }
+            .first-item {
+                margin-left: 85px;
+            }
+        }
+    }
+    }
+
+    .block {
+        .photo {
+            width: 75%;
+            img {
+                width: 550px;
+            }
+        }
+        h2 {
+        font-size: 1.2rem;
+        line-height: 25px;
+        margin-top: 20px;
+        }
+        hr {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 18px;
+            padding: 0 20% 0 20%;
+        }
+        h3 {
+            font-size: 0.9rem;
+            margin-top: 15px;
+            padding: 12px 11px 12px 11px;
+        }
+    }
+
+    .black {
+        h3{
+        font-size: 1.5rem;
+        margin: 40px 0 20px 0;
+        }
+        hr {
+            margin-bottom: 40px;
+        }
+        .wrapper {
+            .items, .items-2 {
+                justify-content: center;
+                .clock {
+                    height: 180px;
+                    width: 135px;
+                    margin-right: 20px;
+                    img {
+                        height: 150px;
+                        width: 105px;
+                    }
+                }
+            }
+            .items-2 {
+                margin-bottom: 45px;
+            }
+            .min-mar {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .some-bg {
+        .wrapper {
+            font-size: 1.4rem;
+            h3 {
+                margin: 28px 0 16px 0;
+            }
+            .brends {
+                padding: 0px;
+                margin-bottom: 35px;
+                margin-left: 0;
+                .none {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .photo-bg {
+        .wrapper {
+            margin-top: 35px;
+            h4 {
+                margin-bottom: 25px;
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .magazin, .category, .call {
+                margin-bottom: 35px;
+            }
+            p, a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .footer {
+        .wrapper {
+            font-size: 9px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
